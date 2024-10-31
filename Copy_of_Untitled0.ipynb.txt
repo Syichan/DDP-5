@@ -1,0 +1,111 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "FBWs3W57l-AS",
+        "outputId": "7cbbeb68-0ac3-4fab-d572-feade58c0794"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['meca', 'motor', 21, 'merah', 2]\n",
+            "['meca', 'motor', 21, 'merah', 2, 20000000, 'baru']\n",
+            "['meca', 'motor', 'Scoopy', 21, 'merah', 2, 20000000, 'baru']\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Buat variabel list dengan value : [namaKendaraan,JenisKendaraan, ccKendaraan, warna kendaraan, rodakendaraan]\n",
+        "transportasi=[\"meca\", \"motor\", 21, \"merah\", 2]\n",
+        "print (transportasi)\n",
+        "\n",
+        "#tambahkan dari list tersebut di belakang dengan value :[harga kendaraan, tipe kendaraan]\n",
+        "transportasi.extend([20000000, 'baru'])\n",
+        "print (transportasi)\n",
+        "\n",
+        "#tambahkan setelah jenis kendaraan dengan value [merk kendaraan]\n",
+        "transportasi.insert(2, 'Scoopy')\n",
+        "print (transportasi)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Buat program python dengan match case untuk menghitung luas bangun datar :\n",
+        "\n",
+        "print ('program menghitung luas bangun datar')\n",
+        "print ('1 = persegi')\n",
+        "print ('2 = lingkaran')\n",
+        "print ('3 = segitiga')\n",
+        "menu = int(input('masukan angka = '))\n",
+        "print ('menu')\n",
+        "\n",
+        "match menu:\n",
+        "   case 1:\n",
+        "     print('menghitung luas persegi')\n",
+        "     sisi=int(input(\"masukan sisi : \"))\n",
+        "     hitung=sisi * sisi\n",
+        "     print(f\"luas persegi= {hitung}\")\n",
+        "   case 2:\n",
+        "     print('menghitung luas lingkaran')\n",
+        "     phi=3.14\n",
+        "     r=int(input(\"masukan jari-jari: \"))\n",
+        "     hitung=phi*(r*r)\n",
+        "     print(f\"luas lingkaran= {hitung}\")\n",
+        "   case 3:\n",
+        "     print('menghitung luas segitiga')\n",
+        "     a=int(input(\"masukan alas: \"))\n",
+        "     t=int(input(\"masukan tinggi: \"))\n",
+        "     hitung=1/2*a*t\n",
+        "     print(f\"luas segitiga: {hitung}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "geGLpJwDpM4T",
+        "outputId": "e036c0c9-7127-4dbf-a156-401e05b0d4b7"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "program menghitung luas bangun datar\n",
+            "1 = persegi\n",
+            "2 = lingkaran\n",
+            "3 = segitiga\n",
+            "masukan angka = 3\n",
+            "menu\n",
+            "menghitung luas segitiga\n",
+            "masukan alas: 15\n",
+            "masukan tinggi: 30\n",
+            "luas segitiga: 225.0\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
